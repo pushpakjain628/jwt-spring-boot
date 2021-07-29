@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://database-2.cnixih1f27jb.us-east-2.rds.amazonaws.com:3306/appdb
+    username: admin
+    password: ZmEE71kuDGOzFu0TKGfe
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MYSQL5InnoDBDialect
+        
+
+  
+        

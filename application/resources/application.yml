@@ -1,0 +1,23 @@
+server:  port: 8081
+#  error:#    whitelabel:#      enabled: false
+
+spring:  mvc:    throw-exception-if-no-handler-found: true  resources:    add-mappings: false      
+  datasource:
+    url: jdbc:mysql://database-1.cnixih1f27jb.us-east-2.rds.amazonaws.com:3306/appdb
+    password: ZmEE71kuDGOzFu0TKGfe
+    username: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  application:
+    name: user-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://3.21.10.176:8761/eureka/            jwt:  secret: 'sldkjflskdajflk;sdajf3wq4324bwkjfsdk3$23$@#$@#!#$%$%^%^YFDDSFSADFRE'  
+      
+ 
