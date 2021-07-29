@@ -1,11 +1,19 @@
-server:  port: 8081
-#  error:#    whitelabel:#      enabled: false
+server:
+  port: 8081
+#  error:
+#    whitelabel:
+#      enabled: false
 
-spring:  mvc:    throw-exception-if-no-handler-found: true  resources:    add-mappings: false      
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+      
   datasource:
-    url: jdbc:mysql://database-1.cnixih1f27jb.us-east-2.rds.amazonaws.com:3306/appdb
-    password: ZmEE71kuDGOzFu0TKGfe
-    username: admin
+    url: jdbc:mysql://url:3306/appdb
+    password: ZmsdfsdfEE71kuDGOzFu0TKGfe
+    username: aderwremin
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,6 +26,12 @@ spring:  mvc:    throw-exception-if-no-handler-found: true  resources:    ad
 eureka:
   client:
     service-url:
-      defaultZone: http://3.21.10.176:8761/eureka/            jwt:  secret: 'sldkjflskdajflk;sdajf3wq4324bwkjfsdk3$23$@#$@#!#$%$%^%^YFDDSFSADFRE'  
+      defaultZone: http://33.4.10.176:8761/eureka/
+      
+      
+jwt:
+  secret: 'sldkjflskdajflk;sdajf3wq4324bwkjfsdk3$23$@#$@#!#$%$%^%^YFDDSFSADFRE'
+  
+
       
  
